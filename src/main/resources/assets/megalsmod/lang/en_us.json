@@ -1,10 +1,12 @@
 {
-  "subtitles.old_player_hurt": "old player hut sound",
+  "subtitles.old_player_hurt": "Player mob hurt",
   "item.megalsmod.player_mob_spawn_egg": "Player Spawn Egg",
   "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
+  "biome.megalsmod.deep_ocean": "Deep Ocean",
   "item.megalsmod.placeholder_item": "Placeholder Item",
   "entity.megalsmod.player_mob": "Player",
   "item.megalsmod.placeholder_tool": "Placeholder Tool",
+  "biome.megalsmod.giant_oak": "Giant Oak",
   "itemGroup.tabplaceholders": "Placeholders",
   "block.megalsmod.placeholder_block": "Placeholder Block"
 }

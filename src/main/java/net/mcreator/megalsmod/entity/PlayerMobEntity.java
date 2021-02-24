@@ -18,6 +18,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
@@ -26,7 +27,14 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.monster.ZombieEntity;
+import net.minecraft.entity.monster.WitchEntity;
+import net.minecraft.entity.monster.StrayEntity;
+import net.minecraft.entity.monster.SpiderEntity;
+import net.minecraft.entity.monster.SlimeEntity;
+import net.minecraft.entity.monster.SkeletonEntity;
 import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.monster.HuskEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
@@ -69,7 +77,7 @@ public class PlayerMobEntity extends MegalsmodModElements.ModElement {
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 20, 1, 10));
+		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 1, 1, 10));
 	}
 
 	@Override
@@ -112,6 +120,8 @@ public class PlayerMobEntity extends MegalsmodModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
+			setCustomName(new StringTextComponent("Steve"));
+			setCustomNameVisible(true);
 			enablePersistence();
 		}
 
@@ -123,12 +133,18 @@ public class PlayerMobEntity extends MegalsmodModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, MobEntity.class, false, false));
-			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(6, new SwimGoal(this));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, HuskEntity.class, false, false));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, SkeletonEntity.class, false, false));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, SlimeEntity.class, false, false));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, StrayEntity.class, false, false));
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, SpiderEntity.class, false, false));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, WitchEntity.class, false, false));
+			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, ZombieEntity.class, false, false));
+			this.goalSelector.addGoal(8, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(9, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(10, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(11, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(12, new SwimGoal(this));
 		}
 
 		@Override

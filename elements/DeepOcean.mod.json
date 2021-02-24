@@ -1,0 +1,105 @@
+{
+  "_fv": 15,
+  "_type": "biome",
+  "definition": {
+    "name": "Deep Ocean",
+    "groundBlock": {
+      "value": "Blocks.WATER"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.WATER"
+    },
+    "ambientSound": {
+      "value": "ambient.underwater.loop"
+    },
+    "additionsSound": {
+      "value": "ambient.underwater.loop.additions.rare"
+    },
+    "music": {
+      "value": "music.creative"
+    },
+    "moodSound": {
+      "value": "ambient.underwater.loop.additions.ultra_rare"
+    },
+    "moodSoundDelay": 10000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "WATER_BUBBLE"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "OCEAN",
+    "parent": {
+      "value": "ocean"
+    },
+    "rainingPossibility": 0.8,
+    "temperature": 0.5,
+    "baseHeight": 0.0,
+    "heightVariation": 0.0,
+    "biomeType": "WARM",
+    "spawnBiome": true,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 30,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 1,
+    "gravelPatchesPerChunk": 1,
+    "reedsPerChunk": 10,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 0,
+    "maxWaterDepth": 50,
+    "treeStem": {
+      "value": "Blocks.AIR"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": true,
+    "spawnShipwreck": true,
+    "oceanRuinType": "COLD",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "Lakes"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntitySquid"
+        },
+        "minGroup": 1,
+        "maxGroup": 10,
+        "weight": 10,
+        "spawnType": "waterCreature"
+      },
+      {
+        "entity": {
+          "value": "EntityCod"
+        },
+        "minGroup": 2,
+        "maxGroup": 8,
+        "weight": 10,
+        "spawnType": "waterCreature"
+      }
+    ]
+  }
+}
