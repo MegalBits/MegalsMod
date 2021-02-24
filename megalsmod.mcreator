@@ -72,6 +72,44 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "deep_ocean"
+    },
+    {
+      "name": "DeepoceanRender1UpdateTick",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deepocean_render_1_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeepoceanRender1",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deepocean_render_1"
     }
   ],
   "variable_elements": [],
@@ -88,6 +126,7 @@
   "language_map": {
     "en_us": {
       "subtitles.old_player_hurt": "Player mob hurt",
+      "block.megalsmod.deepocean_render_1": "Deepocean Render 1",
       "item.megalsmod.player_mob_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
       "biome.megalsmod.deep_ocean": "Deep Ocean",
