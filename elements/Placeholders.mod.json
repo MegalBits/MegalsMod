@@ -1,0 +1,11 @@
+{
+  "_fv": 15,
+  "_type": "tab",
+  "definition": {
+    "name": "Placeholders",
+    "icon": {
+      "value": "CUSTOM:PlaceholderItem"
+    },
+    "showSearch": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "PlaceholderBlock",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placeholder_block"
+    },
+    {
+      "name": "PlaceholderItem",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placeholder_item"
+    },
+    {
+      "name": "Placeholders",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placeholders"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.megalsmod.placeholder_item": "Placeholder Item",
+      "itemGroup.tabplaceholders": "Placeholders",
+      "block.megalsmod.placeholder_block": "Placeholder Block"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "megalsmod",
+    "modName": "MegalsMod",
+    "version": "1.0.0",
+    "author": "admin, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.4",
+    "modElementsPackage": "net.mcreator.megalsmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100103117
+}
