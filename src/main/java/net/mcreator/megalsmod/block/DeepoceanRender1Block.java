@@ -34,7 +34,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.megalsmod.procedures.DeepoceanRender1UpdateTickProcedure;
-import net.mcreator.megalsmod.itemgroup.PlaceholdersItemGroup;
 import net.mcreator.megalsmod.MegalsmodModElements;
 
 import java.util.Random;
@@ -57,8 +56,7 @@ public class DeepoceanRender1Block extends MegalsmodModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(PlaceholdersItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 	private static class BlockColorRegisterHandler {
 		@OnlyIn(Dist.CLIENT)
