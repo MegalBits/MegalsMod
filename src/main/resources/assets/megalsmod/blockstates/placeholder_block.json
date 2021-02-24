@@ -1,28 +1,7 @@
 {
   "variants": {
-    "facing=south": {
+    "": {
       "model": "megalsmod:block/placeholder_block"
-    },
-    "facing=north": {
-      "model": "megalsmod:block/placeholder_block"
-    },
-    "facing=east": {
-      "model": "megalsmod:block/placeholder_block",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "megalsmod:block/placeholder_block",
-      "x": 90
-    },
-    "facing=up": {
-      "model": "megalsmod:block/placeholder_block",
-      "x": 90,
-      "y": 90
-    },
-    "facing=down": {
-      "model": "megalsmod:block/placeholder_block",
-      "x": 90,
-      "y": 90
     }
   }
 }

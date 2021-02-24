@@ -45,6 +45,8 @@ public class MegalsmodModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public MegalsmodModElements() {
+		sounds.put(new ResourceLocation("megalsmod", "old_player_hurt"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("megalsmod", "old_player_hurt")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("megalsmod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

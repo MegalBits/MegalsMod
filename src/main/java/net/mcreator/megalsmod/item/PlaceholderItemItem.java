@@ -16,7 +16,7 @@ public class PlaceholderItemItem extends MegalsmodModElements.ModElement {
 	@ObjectHolder("megalsmod:placeholder_item")
 	public static final Item block = null;
 	public PlaceholderItemItem(MegalsmodModElements instance) {
-		super(instance, 2);
+		super(instance, 1);
 	}
 
 	@Override

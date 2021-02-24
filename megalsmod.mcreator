@@ -4,7 +4,7 @@
     {
       "name": "PlaceholderBlock",
       "type": "block",
-      "sortid": 1,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -13,7 +13,7 @@
     {
       "name": "PlaceholderItem",
       "type": "item",
-      "sortid": 2,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -22,7 +22,7 @@
     {
       "name": "Placeholders",
       "type": "tab",
-      "sortid": 2,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -45,14 +45,35 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "placeholder_tool"
+    },
+    {
+      "name": "PlayerMob",
+      "type": "mob",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_mob"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "old_player_hurt",
+      "files": [
+        "classic_hurt"
+      ],
+      "category": "player",
+      "subtitle": "old player hut sound"
+    }
+  ],
   "language_map": {
     "en_us": {
+      "subtitles.old_player_hurt": "old player hut sound",
+      "item.megalsmod.player_mob_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
       "item.megalsmod.placeholder_item": "Placeholder Item",
+      "entity.megalsmod.player_mob": "Player",
       "item.megalsmod.placeholder_tool": "Placeholder Tool",
       "itemGroup.tabplaceholders": "Placeholders",
       "block.megalsmod.placeholder_block": "Placeholder Block"

@@ -13,7 +13,7 @@ import net.mcreator.megalsmod.MegalsmodModElements;
 @MegalsmodModElements.ModElement.Tag
 public class PlaceholdersItemGroup extends MegalsmodModElements.ModElement {
 	public PlaceholdersItemGroup(MegalsmodModElements instance) {
-		super(instance, 2);
+		super(instance, 5);
 	}
 
 	@Override
