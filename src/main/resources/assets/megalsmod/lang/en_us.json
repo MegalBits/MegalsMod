@@ -1,5 +1,7 @@
 {
+  "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
   "item.megalsmod.placeholder_item": "Placeholder Item",
+  "item.megalsmod.placeholder_tool": "Placeholder Tool",
   "itemGroup.tabplaceholders": "Placeholders",
   "block.megalsmod.placeholder_block": "Placeholder Block"
 }

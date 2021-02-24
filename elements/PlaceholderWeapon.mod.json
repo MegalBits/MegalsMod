@@ -1,0 +1,27 @@
+{
+  "_fv": 15,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "placeholderweapon",
+    "customModelName": "Normal",
+    "name": "Placeholder Weapon",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Placeholders"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 2.0,
+    "enchantability": 100,
+    "damageVsEntity": 10.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -27,13 +27,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "placeholders"
+    },
+    {
+      "name": "PlaceholderWeapon",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placeholder_weapon"
+    },
+    {
+      "name": "PlaceholderTool",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placeholder_tool"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
       "item.megalsmod.placeholder_item": "Placeholder Item",
+      "item.megalsmod.placeholder_tool": "Placeholder Tool",
       "itemGroup.tabplaceholders": "Placeholders",
       "block.megalsmod.placeholder_block": "Placeholder Block"
     }

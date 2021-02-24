@@ -1,0 +1,27 @@
+{
+  "_fv": 15,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "placeholdertool",
+    "customModelName": "Normal",
+    "name": "Placeholder Tool",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Placeholders"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 100,
+    "efficiency": 10.0,
+    "attackSpeed": 1.0,
+    "enchantability": 100,
+    "damageVsEntity": 1.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
