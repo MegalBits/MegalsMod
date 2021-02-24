@@ -29,10 +29,10 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.BreakBlockGoal;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -45,7 +45,6 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
-import net.minecraft.block.Blocks;
 
 import net.mcreator.megalsmod.MegalsmodModElements;
 
@@ -64,7 +63,7 @@ public class PlayerMobEntity extends MegalsmodModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("player_mob")
 						.setRegistryName("player_mob");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -12240221, -16724788, new Item.Properties().group(ItemGroup.MISC))
+		elements.items.add(() -> new SpawnEggItem(entity, -16724788, -12240221, new Item.Properties().group(ItemGroup.MISC))
 				.setRegistryName("player_mob_spawn_egg"));
 	}
 
@@ -87,7 +86,7 @@ public class PlayerMobEntity extends MegalsmodModElements.ModElement {
 				BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("megalsmod:textures/2021_02_23_real-steve-16886004.png");
+						return new ResourceLocation("megalsmod:textures/steve.png");
 					}
 				};
 				customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
@@ -124,13 +123,12 @@ public class PlayerMobEntity extends MegalsmodModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new BreakBlockGoal(Blocks.OAK_LOG.getDefaultState().getBlock(), this, 1, (int) 100));
-			this.goalSelector.addGoal(2, new BreakBlockGoal(Blocks.OAK_LEAVES.getDefaultState().getBlock(), this, 1, (int) 100));
-			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(7, new SwimGoal(this));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, MobEntity.class, false, false));
+			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(6, new SwimGoal(this));
 		}
 
 		@Override
