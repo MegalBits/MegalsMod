@@ -80,7 +80,7 @@ public class DeepoceanRender1Block extends MegalsmodModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WATER).sound(SoundType.LILY_PADS).hardnessAndResistance(-1, 3600000).setLightLevel(s -> 0)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.LILY_PADS).hardnessAndResistance(-1, 3600000).setLightLevel(s -> 0)
 					.doesNotBlockMovement());
 			setRegistryName("deepocean_render_1");
 		}
