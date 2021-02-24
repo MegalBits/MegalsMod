@@ -74,7 +74,7 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 								24000, true))
 						.setParticle(new ParticleEffectAmbience(ParticleTypes.BUBBLE, 0.005f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.AIR.getDefaultState(),
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.ICE.getDefaultState(),
 								Blocks.WATER.getDefaultState(), Blocks.WATER.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.MONUMENT);
 				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);

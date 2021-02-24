@@ -4,7 +4,7 @@
   "definition": {
     "name": "Deep Ocean",
     "groundBlock": {
-      "value": "Blocks.AIR"
+      "value": "Blocks.ICE"
     },
     "undergroundBlock": {
       "value": "Blocks.WATER"
