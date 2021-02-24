@@ -93,7 +93,43 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onBlockAdded": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
     "onTickUpdate": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onRandomUpdateEvent": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onDestroyedByPlayer": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onDestroyedByExplosion": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onStartToDestroy": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onEntityCollides": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onEntityWalksOn": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onBlockPlayedBy": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onRedstoneOn": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onRedstoneOff": {
       "name": "DeepoceanRender1UpdateTick"
     },
     "spawnWorldTypes": [
