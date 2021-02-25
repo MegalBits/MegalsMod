@@ -53,11 +53,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @MegalsmodModElements.ModElement.Tag
-public class DeepoceanRender1Block extends MegalsmodModElements.ModElement {
-	@ObjectHolder("megalsmod:placeable_water")
+public class DeepoceanouteredgeRenderBlock extends MegalsmodModElements.ModElement {
+	@ObjectHolder("megalsmod:deepoceanoutskirts")
 	public static final Block block = null;
-	public DeepoceanRender1Block(MegalsmodModElements instance) {
-		super(instance, 9);
+	public DeepoceanouteredgeRenderBlock(MegalsmodModElements instance) {
+		super(instance, 14);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ItemColorRegisterHandler());
@@ -92,7 +92,7 @@ public class DeepoceanRender1Block extends MegalsmodModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.LILY_PADS).hardnessAndResistance(-1, 3600000).setLightLevel(s -> 0)
 					.doesNotBlockMovement());
-			setRegistryName("placeable_water");
+			setRegistryName("deepoceanoutskirts");
 		}
 
 		@Override
@@ -309,7 +309,7 @@ public class DeepoceanRender1Block extends MegalsmodModElements.ModElement {
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("megalsmod:deep_ocean").equals(event.getName()))
+		if (new ResourceLocation("megalsmod:deep_ocean_outskirts").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
@@ -363,6 +363,6 @@ public class DeepoceanRender1Block extends MegalsmodModElements.ModElement {
 			protected IRuleTestType<?> getType() {
 				return IRuleTestType.BLOCK_MATCH;
 			}
-		}, block.getDefaultState(), 64)).range(100).square().func_242731_b(22));
+		}, block.getDefaultState(), 16)).range(100).square().func_242731_b(22));
 	}
 }

@@ -137,7 +137,7 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:DeepOceanEdge"
+        "value": "CUSTOM:DeepOceanOuterEdge"
       }
     ],
     "blocksToReplace": [
@@ -188,7 +188,7 @@
       }
     ],
     "frequencyPerChunks": 22,
-    "frequencyOnChunk": 32,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 100
   }

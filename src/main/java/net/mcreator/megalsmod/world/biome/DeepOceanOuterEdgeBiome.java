@@ -51,10 +51,10 @@ import java.util.List;
 import com.google.common.collect.ImmutableList;
 
 @MegalsmodModElements.ModElement.Tag
-public class DeepOceanEdgeBiome extends MegalsmodModElements.ModElement {
+public class DeepOceanOuterEdgeBiome extends MegalsmodModElements.ModElement {
 	public static Biome biome;
-	public DeepOceanEdgeBiome(MegalsmodModElements instance) {
-		super(instance, 10);
+	public DeepOceanOuterEdgeBiome(MegalsmodModElements instance) {
+		super(instance, 15);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -74,17 +74,17 @@ public class DeepOceanEdgeBiome extends MegalsmodModElements.ModElement {
 				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
 				biomeGenerationSettings.withStructure(StructureFeatures.OCEAN_RUIN_COLD);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS
-						.withConfiguration(new ProbabilityConfig(0.3F)).func_242731_b(30).withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT));
+						.withConfiguration(new ProbabilityConfig(0.3F)).func_242731_b(50).withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
 										ImmutableList.of(Blocks.AIR.getDefaultState(), Blocks.WATER.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(80));
+								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(100));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
 										ImmutableList.of(Blocks.AIR.getDefaultState(), Blocks.WATER.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(45));
+								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(60));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.SUGAR_CANE_PATCH_CONFIG)
 								.withPlacement(Features.Placements.PATCH_PLACEMENT).func_242731_b(10));
@@ -98,7 +98,7 @@ public class DeepOceanEdgeBiome extends MegalsmodModElements.ModElement {
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.OCEAN).depth(-1f).scale(0f).temperature(0.5f)
 						.downfall(0.8f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("megalsmod:deep_ocean_edge"));
+				event.getRegistry().register(biome.setRegistryName("megalsmod:deep_ocean_outskirts"));
 			}
 		}
 	}
@@ -114,7 +114,7 @@ public class DeepOceanEdgeBiome extends MegalsmodModElements.ModElement {
 		static {
 			codec = com.mojang.serialization.Codec.unit(() -> instance);
 			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("deep_ocean_edge_lvtd");
+			tdt.setRegistryName("deep_ocean_outskirts_lvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
 		@Override
@@ -135,7 +135,7 @@ public class DeepOceanEdgeBiome extends MegalsmodModElements.ModElement {
 		static {
 			codec = com.mojang.serialization.Codec.unit(() -> instance);
 			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("deep_ocean_edge_tvtd");
+			tdt.setRegistryName("deep_ocean_outskirts_tvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
 		@Override
@@ -156,7 +156,7 @@ public class DeepOceanEdgeBiome extends MegalsmodModElements.ModElement {
 		static {
 			codec = com.mojang.serialization.Codec.unit(() -> instance);
 			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("deep_ocean_edge_ctd");
+			tdt.setRegistryName("deep_ocean_outskirts_ctd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
 		public CustomCocoaTreeDecorator() {

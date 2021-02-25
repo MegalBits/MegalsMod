@@ -128,6 +128,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "deepoceanedge_render_1"
+    },
+    {
+      "name": "DeepoceanouteredgeRender",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deepoceanoutskirts"
+    },
+    {
+      "name": "DeepOceanOuterEdge",
+      "type": "biome",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_ocean_outskirts"
     }
   ],
   "variable_elements": [],
@@ -149,11 +167,13 @@
       "item.megalsmod.placeholder_tool": "Placeholder Tool",
       "biome.megalsmod.giant_oak": "Giant Oak",
       "block.megalsmod.placeable_water": "Placeable Water",
+      "block.megalsmod.deepoceanoutskirts": "Placeable Water",
       "itemGroup.tabplaceholders": "Placeholders",
       "block.megalsmod.deepoceanedge_render_1": "Placeable Water",
       "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
       "item.megalsmod.placeholder_item": "Placeholder Item",
       "entity.megalsmod.player_mob": "Player",
+      "biome.megalsmod.deep_ocean_outskirts": "Deep Ocean Outskirts",
       "biome.megalsmod.deep_ocean_edge": "Deep Ocean",
       "block.megalsmod.placeholder_block": "Placeholder Block"
     }

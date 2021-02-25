@@ -76,7 +76,7 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 								24000, true))
 						.build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.ICE.getDefaultState(),
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.AIR.getDefaultState(),
 								Blocks.WATER.getDefaultState(), Blocks.WATER.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.MONUMENT);
 				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
@@ -86,19 +86,21 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
-										ImmutableList.of(Blocks.ICE.getDefaultState(), Blocks.WATER.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(50));
+										ImmutableList.of(Blocks.AIR.getDefaultState(), Blocks.WATER.getDefaultState())))
+								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(60));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
-										ImmutableList.of(Blocks.ICE.getDefaultState(), Blocks.WATER.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(30));
+										ImmutableList.of(Blocks.AIR.getDefaultState(), Blocks.WATER.getDefaultState())))
+								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(40));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.SUGAR_CANE_PATCH_CONFIG)
-								.withPlacement(Features.Placements.PATCH_PLACEMENT).func_242731_b(10));
+								.withPlacement(Features.Placements.PATCH_PLACEMENT).func_242731_b(20));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withLavaAndWaterLakes(biomeGenerationSettings);
+				DefaultBiomeFeatures.withSimpleSeagrass(biomeGenerationSettings);
+				DefaultBiomeFeatures.withIcebergs(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(EntityType.SQUID, 10, 1, 10));
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(EntityType.COD, 10, 2, 8));
@@ -111,8 +113,8 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 	}
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		BiomeManager.addBiome(BiomeManager.BiomeType.COOL,
-				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 10));
+		BiomeManager.addBiome(BiomeManager.BiomeType.WARM,
+				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 2));
 	}
 	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
 		public static final CustomLeaveVineTreeDecorator instance = new CustomLeaveVineTreeDecorator();
