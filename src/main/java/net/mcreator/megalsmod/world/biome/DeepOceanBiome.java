@@ -90,7 +90,7 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(EntityType.SQUID, 10, 1, 10));
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(EntityType.COD, 10, 2, 8));
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.OCEAN).depth(0f).scale(0f).temperature(0.5f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.OCEAN).depth(-2f).scale(0f).temperature(0.5f)
 						.downfall(0.8f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("megalsmod:deep_ocean"));
@@ -99,7 +99,7 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 	}
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM,
+		BiomeManager.addBiome(BiomeManager.BiomeType.COOL,
 				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 10));
 	}
 	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
