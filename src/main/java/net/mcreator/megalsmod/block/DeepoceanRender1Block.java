@@ -54,7 +54,7 @@ import java.util.Collections;
 
 @MegalsmodModElements.ModElement.Tag
 public class DeepoceanRender1Block extends MegalsmodModElements.ModElement {
-	@ObjectHolder("megalsmod:deepocean_render_1")
+	@ObjectHolder("megalsmod:placeable_water")
 	public static final Block block = null;
 	public DeepoceanRender1Block(MegalsmodModElements instance) {
 		super(instance, 9);
@@ -92,7 +92,7 @@ public class DeepoceanRender1Block extends MegalsmodModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.LILY_PADS).hardnessAndResistance(-1, 3600000).setLightLevel(s -> 0)
 					.doesNotBlockMovement());
-			setRegistryName("deepocean_render_1");
+			setRegistryName("placeable_water");
 		}
 
 		@Override

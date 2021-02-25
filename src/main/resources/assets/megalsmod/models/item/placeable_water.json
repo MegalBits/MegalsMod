@@ -1,5 +1,5 @@
 {
-  "parent": "megalsmod:block/deepocean_render_1",
+  "parent": "megalsmod:block/placeable_water",
   "display": {
     "thirdperson": {
       "rotation": [

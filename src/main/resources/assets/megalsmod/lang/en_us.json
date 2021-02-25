@@ -1,13 +1,14 @@
 {
   "subtitles.old_player_hurt": "Player mob hurt",
-  "block.megalsmod.deepocean_render_1": "PlaceableWater",
   "item.megalsmod.player_mob_spawn_egg": "Player Spawn Egg",
-  "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
   "biome.megalsmod.deep_ocean": "Deep Ocean",
-  "item.megalsmod.placeholder_item": "Placeholder Item",
-  "entity.megalsmod.player_mob": "Player",
   "item.megalsmod.placeholder_tool": "Placeholder Tool",
   "biome.megalsmod.giant_oak": "Giant Oak",
+  "block.megalsmod.placeable_water": "Placeable Water",
   "itemGroup.tabplaceholders": "Placeholders",
+  "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
+  "item.megalsmod.placeholder_item": "Placeholder Item",
+  "entity.megalsmod.player_mob": "Player",
+  "biome.megalsmod.deep_ocean_edge": "Deep Ocean",
   "block.megalsmod.placeholder_block": "Placeholder Block"
 }

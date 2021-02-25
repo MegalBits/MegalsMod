@@ -2,7 +2,7 @@
   "_fv": 15,
   "_type": "block",
   "definition": {
-    "texture": "marble",
+    "texture": "water",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -26,7 +26,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "PlaceableWater",
+    "name": "Placeable Water",
     "specialInfo": [],
     "hardness": 99.0,
     "resistance": 99.0,

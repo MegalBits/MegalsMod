@@ -53,10 +53,10 @@ import java.util.List;
 import com.google.common.collect.ImmutableList;
 
 @MegalsmodModElements.ModElement.Tag
-public class DeepOceanBiome extends MegalsmodModElements.ModElement {
+public class DeepOceanEdgeBiome extends MegalsmodModElements.ModElement {
 	public static Biome biome;
-	public DeepOceanBiome(MegalsmodModElements instance) {
-		super(instance, 8);
+	public DeepOceanEdgeBiome(MegalsmodModElements instance) {
+		super(instance, 10);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -105,7 +105,7 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.OCEAN).depth(-2f).scale(0f).temperature(0.5f)
 						.downfall(0.8f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("megalsmod:deep_ocean"));
+				event.getRegistry().register(biome.setRegistryName("megalsmod:deep_ocean_edge"));
 			}
 		}
 	}
@@ -121,7 +121,7 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 		static {
 			codec = com.mojang.serialization.Codec.unit(() -> instance);
 			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("deep_ocean_lvtd");
+			tdt.setRegistryName("deep_ocean_edge_lvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
 		@Override
@@ -142,7 +142,7 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 		static {
 			codec = com.mojang.serialization.Codec.unit(() -> instance);
 			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("deep_ocean_tvtd");
+			tdt.setRegistryName("deep_ocean_edge_tvtd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
 		@Override
@@ -163,7 +163,7 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 		static {
 			codec = com.mojang.serialization.Codec.unit(() -> instance);
 			tdt = new TreeDecoratorType(codec);
-			tdt.setRegistryName("deep_ocean_ctd");
+			tdt.setRegistryName("deep_ocean_edge_ctd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
 		public CustomCocoaTreeDecorator() {
