@@ -72,7 +72,7 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": "Items.DYE#1"
+      "value": "Items.ROTTEN_FLESH"
     },
     "livingSound": {
       "value": ""

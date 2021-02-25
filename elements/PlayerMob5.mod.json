@@ -5,7 +5,7 @@
     "mobName": "Player",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "ronald.png",
+    "mobModelTexture": "angryblack.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -72,7 +72,7 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": "Items.BONE"
+      "value": "Items.STICK"
     },
     "livingSound": {
       "value": ""

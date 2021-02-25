@@ -108,6 +108,78 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "player_mob_2"
+    },
+    {
+      "name": "PlayerMob3",
+      "type": "mob",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_mob_3"
+    },
+    {
+      "name": "PlayerMob4",
+      "type": "mob",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_mob_4"
+    },
+    {
+      "name": "PlayerMob5",
+      "type": "mob",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_mob_5"
+    },
+    {
+      "name": "PlayerMob6",
+      "type": "mob",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_mob_6"
+    },
+    {
+      "name": "Playermob7",
+      "type": "mob",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "playermob_7"
+    },
+    {
+      "name": "PlayerMob8",
+      "type": "mob",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_mob_8"
+    },
+    {
+      "name": "PlayerMob9",
+      "type": "mob",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_mob_9"
+    },
+    {
+      "name": "PlayerMob10",
+      "type": "mob",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_mob_10"
     }
   ],
   "variable_elements": [],
@@ -125,21 +197,37 @@
     "en_us": {
       "subtitles.old_player_hurt": "Player mob hurt",
       "item.megalsmod.player_mob_1_spawn_egg": "Player Spawn Egg",
+      "item.megalsmod.placeholder_tool": "Placeholder Tool",
+      "item.megalsmod.player_mob_8_spawn_egg": "Player Spawn Egg",
+      "entity.megalsmod.playermob_7": "Player",
+      "item.megalsmod.playermob_7_spawn_egg": "Player Spawn Egg",
+      "item.megalsmod.player_mob_6_spawn_egg": "Player Spawn Egg",
+      "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
+      "item.megalsmod.player_mob_4_spawn_egg": "Player Spawn Egg",
+      "block.megalsmod.placeholder_block": "Placeholder Block",
+      "entity.megalsmod.player_mob_4": "Player",
+      "entity.megalsmod.player_mob_3": "Player",
+      "entity.megalsmod.player_mob_10": "Player",
       "entity.megalsmod.player_mob_2": "Player",
+      "item.megalsmod.player_mob_9_spawn_egg": "Player Spawn Egg",
       "entity.megalsmod.player_mob_1": "Player",
       "item.megalsmod.player_mob_spawn_egg": "Player Spawn Egg",
       "entity.megalsmod.player_mob_0": "Player",
       "itemGroup.tabplayer_mobs": "Mobs",
       "item.megalsmod.player_mob_0_spawn_egg": "Player Spawn Egg",
-      "item.megalsmod.placeholder_tool": "Placeholder Tool",
       "item.megalsmod.player_mob_catagory_image": "Player Mob Catagory Image",
       "biome.megalsmod.giant_oak": "Giant Oak",
+      "entity.megalsmod.player_mob_9": "Player",
       "item.megalsmod.player_mob_2_spawn_egg": "Player Spawn Egg",
+      "entity.megalsmod.player_mob_8": "Player",
+      "item.megalsmod.player_mob_10_spawn_egg": "Player Spawn Egg",
       "itemGroup.tabplaceholders": "Placeholders",
-      "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
+      "entity.megalsmod.player_mob_6": "Player",
+      "entity.megalsmod.player_mob_5": "Player",
+      "item.megalsmod.player_mob_5_spawn_egg": "Player Spawn Egg",
       "entity.megalsmod.player_mob": "Player",
       "item.megalsmod.placeholder_item": "Placeholder Item",
-      "block.megalsmod.placeholder_block": "Placeholder Block"
+      "item.megalsmod.player_mob_3_spawn_egg": "Player Spawn Egg"
     }
   },
   "workspaceSettings": {

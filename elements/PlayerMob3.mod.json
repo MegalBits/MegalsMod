@@ -5,7 +5,7 @@
     "mobName": "Player",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "ronald.png",
+    "mobModelTexture": "colour.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,

@@ -50,10 +50,10 @@ import net.mcreator.megalsmod.itemgroup.PlayerMobsItemGroup;
 import net.mcreator.megalsmod.MegalsmodModElements;
 
 @MegalsmodModElements.ModElement.Tag
-public class PlayerMob0Entity extends MegalsmodModElements.ModElement {
+public class PlayerMob10Entity extends MegalsmodModElements.ModElement {
 	public static EntityType entity = null;
-	public PlayerMob0Entity(MegalsmodModElements instance) {
-		super(instance, 8);
+	public PlayerMob10Entity(MegalsmodModElements instance) {
+		super(instance, 20);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ModelRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -61,11 +61,11 @@ public class PlayerMob0Entity extends MegalsmodModElements.ModElement {
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("player_mob_0")
-						.setRegistryName("player_mob_0");
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("player_mob_10")
+						.setRegistryName("player_mob_10");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -1, -3355444, new Item.Properties().group(PlayerMobsItemGroup.tab))
-				.setRegistryName("player_mob_0_spawn_egg"));
+				.setRegistryName("player_mob_10_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -87,7 +87,7 @@ public class PlayerMob0Entity extends MegalsmodModElements.ModElement {
 				BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("megalsmod:textures/megal.png");
+						return new ResourceLocation("megalsmod:textures/noface.png");
 					}
 				};
 				customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
@@ -138,7 +138,7 @@ public class PlayerMob0Entity extends MegalsmodModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(Items.ROTTEN_FLESH, (int) (1)));
+			this.entityDropItem(new ItemStack(Items.WHEAT_SEEDS, (int) (1)));
 		}
 
 		@Override
