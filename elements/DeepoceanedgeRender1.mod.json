@@ -1,0 +1,195 @@
+{
+  "_fv": 15,
+  "_type": "block",
+  "definition": {
+    "texture": "water",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 110,
+    "customModelName": "Single texture",
+    "rotationMode": 0,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "Water",
+    "isItemTinted": true,
+    "hasTransparency": false,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "name": "Placeable Water",
+    "specialInfo": [],
+    "hardness": 99.0,
+    "resistance": 99.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 255,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": true,
+    "soundOnStep": {
+      "value": "LILY_PADS"
+    },
+    "luminance": 0,
+    "unbreakable": true,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onBlockAdded": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onTickUpdate": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onRandomUpdateEvent": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onDestroyedByPlayer": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onDestroyedByExplosion": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onStartToDestroy": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onEntityCollides": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onEntityWalksOn": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onBlockPlayedBy": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onRedstoneOn": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "onRedstoneOff": {
+      "name": "DeepoceanRender1UpdateTick"
+    },
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DeepOceanEdge"
+      }
+    ],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      },
+      {
+        "value": "Blocks.COBBLESTONE"
+      },
+      {
+        "value": "Blocks.MOSSY_COBBLESTONE"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "Blocks.COAL_ORE"
+      },
+      {
+        "value": "Blocks.IRON_ORE"
+      },
+      {
+        "value": "Blocks.REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.GOLD_ORE"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "Blocks.LAPIS_ORE"
+      },
+      {
+        "value": "Blocks.DIAMOND_ORE"
+      },
+      {
+        "value": "Blocks.EMERALD_ORE"
+      },
+      {
+        "value": "Blocks.FLOWING_LAVA"
+      }
+    ],
+    "frequencyPerChunks": 32,
+    "frequencyOnChunk": 32,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 100
+  }
+}

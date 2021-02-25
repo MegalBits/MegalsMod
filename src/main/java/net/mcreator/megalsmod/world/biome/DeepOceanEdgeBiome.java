@@ -87,12 +87,12 @@ public class DeepOceanEdgeBiome extends MegalsmodModElements.ModElement {
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
 										ImmutableList.of(Blocks.ICE.getDefaultState(), Blocks.WATER.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(50));
+								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(100));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
 										ImmutableList.of(Blocks.ICE.getDefaultState(), Blocks.WATER.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(30));
+								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(60));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.SUGAR_CANE_PATCH_CONFIG)
 								.withPlacement(Features.Placements.PATCH_PLACEMENT).func_242731_b(10));
@@ -102,7 +102,7 @@ public class DeepOceanEdgeBiome extends MegalsmodModElements.ModElement {
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(EntityType.SQUID, 10, 1, 10));
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(EntityType.COD, 10, 2, 8));
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.OCEAN).depth(-2f).scale(0f).temperature(0.5f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.OCEAN).depth(-1f).scale(0f).temperature(0.5f)
 						.downfall(0.8f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("megalsmod:deep_ocean_edge"));
