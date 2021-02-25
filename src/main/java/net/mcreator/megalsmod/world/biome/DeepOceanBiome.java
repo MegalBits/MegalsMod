@@ -16,7 +16,6 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
 import net.minecraft.world.gen.feature.SphereReplaceConfig;
-import net.minecraft.world.gen.feature.ProbabilityConfig;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.FeatureSpread;
 import net.minecraft.world.gen.feature.Feature;
@@ -81,30 +80,24 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 				biomeGenerationSettings.withStructure(StructureFeatures.MONUMENT);
 				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
 				biomeGenerationSettings.withStructure(StructureFeatures.OCEAN_RUIN_COLD);
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS
-						.withConfiguration(new ProbabilityConfig(0.3F)).func_242731_b(30).withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
 										ImmutableList.of(Blocks.AIR.getDefaultState(), Blocks.WATER.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(60));
+								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(80));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
 										ImmutableList.of(Blocks.AIR.getDefaultState(), Blocks.WATER.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(40));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.SUGAR_CANE_PATCH_CONFIG)
-								.withPlacement(Features.Placements.PATCH_PLACEMENT).func_242731_b(20));
+								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(50));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withLavaAndWaterLakes(biomeGenerationSettings);
 				DefaultBiomeFeatures.withSimpleSeagrass(biomeGenerationSettings);
-				DefaultBiomeFeatures.withIcebergs(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(EntityType.SQUID, 10, 1, 10));
 				mobSpawnInfo.withSpawner(EntityClassification.WATER_CREATURE, new MobSpawnInfo.Spawners(EntityType.COD, 10, 2, 8));
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.OCEAN).depth(-2f).scale(0f).temperature(0.5f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.NONE).depth(-2f).scale(0f).temperature(0.5f)
 						.downfall(0.8f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("megalsmod:deep_ocean"));

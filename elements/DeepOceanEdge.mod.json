@@ -27,13 +27,13 @@
       "value": "WATER_BUBBLE"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "OCEAN",
+    "biomeCategory": "NONE",
     "parent": {
       "value": "CUSTOM:DeepOceanOuterEdge"
     },
     "rainingPossibility": 0.8,
     "temperature": 0.5,
-    "baseHeight": -1.0,
+    "baseHeight": -1.5,
     "heightVariation": 0.0,
     "biomeType": "WARM",
     "spawnBiome": true,
