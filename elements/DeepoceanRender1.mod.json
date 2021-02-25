@@ -26,7 +26,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Deepocean Render 1",
+    "name": "PlaceableWater",
     "specialInfo": [],
     "hardness": 99.0,
     "resistance": 99.0,
@@ -187,7 +187,7 @@
         "value": "Blocks.FLOWING_LAVA"
       }
     ],
-    "frequencyPerChunks": 64,
+    "frequencyPerChunks": 32,
     "frequencyOnChunk": 64,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 100

@@ -15,12 +15,13 @@ import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
+import net.minecraft.world.gen.feature.SphereReplaceConfig;
 import net.minecraft.world.gen.feature.ProbabilityConfig;
 import net.minecraft.world.gen.feature.Features;
+import net.minecraft.world.gen.feature.FeatureSpread;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.SoundAdditionsAmbience;
-import net.minecraft.world.biome.ParticleEffectAmbience;
 import net.minecraft.world.biome.MoodSoundAmbience;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -37,7 +38,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Direction;
 import net.minecraft.state.BooleanProperty;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.client.audio.BackgroundMusicSelector;
@@ -49,6 +49,8 @@ import net.mcreator.megalsmod.MegalsmodModElements;
 import java.util.Set;
 import java.util.Random;
 import java.util.List;
+
+import com.google.common.collect.ImmutableList;
 
 @MegalsmodModElements.ModElement.Tag
 public class DeepOceanBiome extends MegalsmodModElements.ModElement {
@@ -72,7 +74,7 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 						.setMusic(new BackgroundMusicSelector(
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("music.creative")), 12000,
 								24000, true))
-						.setParticle(new ParticleEffectAmbience(ParticleTypes.BUBBLE, 0.005f)).build();
+						.build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.ICE.getDefaultState(),
 								Blocks.WATER.getDefaultState(), Blocks.WATER.getDefaultState())));
@@ -81,6 +83,16 @@ public class DeepOceanBiome extends MegalsmodModElements.ModElement {
 				biomeGenerationSettings.withStructure(StructureFeatures.OCEAN_RUIN_COLD);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS
 						.withConfiguration(new ProbabilityConfig(0.3F)).func_242731_b(30).withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.DISK
+								.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
+										ImmutableList.of(Blocks.ICE.getDefaultState(), Blocks.WATER.getDefaultState())))
+								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(10));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.DISK
+								.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
+										ImmutableList.of(Blocks.ICE.getDefaultState(), Blocks.WATER.getDefaultState())))
+								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(10));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.SUGAR_CANE_PATCH_CONFIG)
 								.withPlacement(Features.Placements.PATCH_PLACEMENT).func_242731_b(10));

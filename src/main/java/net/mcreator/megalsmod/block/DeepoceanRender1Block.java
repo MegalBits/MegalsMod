@@ -363,6 +363,6 @@ public class DeepoceanRender1Block extends MegalsmodModElements.ModElement {
 			protected IRuleTestType<?> getType() {
 				return IRuleTestType.BLOCK_MATCH;
 			}
-		}, block.getDefaultState(), 64)).range(100).square().func_242731_b(64));
+		}, block.getDefaultState(), 64)).range(100).square().func_242731_b(32));
 	}
 }
