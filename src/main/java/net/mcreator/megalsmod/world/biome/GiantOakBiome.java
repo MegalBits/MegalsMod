@@ -74,7 +74,7 @@ public class GiantOakBiome extends MegalsmodModElements.ModElement {
 										new SimpleBlockStateProvider(Blocks.OAK_LEAVES.getDefaultState()),
 										new MegaPineFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0),
 												FeatureSpread.func_242253_a(13, 4)),
-										new GiantTrunkPlacer(28, 2, 14), new TwoLayerFeature(1, 1, 2))).setMaxWaterDepth(13).build())
+										new GiantTrunkPlacer(28, 2, 14), new TwoLayerFeature(1, 1, 2))).setMaxWaterDepth(0).build())
 								.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 								.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(20, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
@@ -132,6 +132,6 @@ public class GiantOakBiome extends MegalsmodModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		BiomeManager.addBiome(BiomeManager.BiomeType.WARM,
-				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 15));
+				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 5));
 	}
 }

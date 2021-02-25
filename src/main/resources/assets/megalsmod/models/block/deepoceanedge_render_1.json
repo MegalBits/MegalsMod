@@ -1,7 +1,0 @@
-{
-  "parent": "block/leaves",
-  "textures": {
-    "all": "megalsmod:blocks/water",
-    "particle": "megalsmod:blocks/water"
-  }
-}

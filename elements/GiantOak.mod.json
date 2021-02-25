@@ -45,7 +45,7 @@
     "heightVariation": 0.30000000000000004,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 15,
+    "biomeWeight": 5,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 10,
     "seagrassPerChunk": 3,
@@ -60,7 +60,7 @@
     "vanillaTreeType": "Mega spruce trees",
     "treeType": 1,
     "minHeight": 28,
-    "maxWaterDepth": 13,
+    "maxWaterDepth": 0,
     "treeStem": {
       "value": "Blocks.LOG#0"
     },
