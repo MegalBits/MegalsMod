@@ -1,11 +1,19 @@
 {
   "subtitles.old_player_hurt": "Player mob hurt",
+  "item.megalsmod.player_mob_1_spawn_egg": "Player Spawn Egg",
+  "entity.megalsmod.player_mob_2": "Player",
+  "entity.megalsmod.player_mob_1": "Player",
   "item.megalsmod.player_mob_spawn_egg": "Player Spawn Egg",
+  "entity.megalsmod.player_mob_0": "Player",
+  "itemGroup.tabplayer_mobs": "Mobs",
+  "item.megalsmod.player_mob_0_spawn_egg": "Player Spawn Egg",
   "item.megalsmod.placeholder_tool": "Placeholder Tool",
+  "item.megalsmod.player_mob_catagory_image": "Player Mob Catagory Image",
   "biome.megalsmod.giant_oak": "Giant Oak",
+  "item.megalsmod.player_mob_2_spawn_egg": "Player Spawn Egg",
   "itemGroup.tabplaceholders": "Placeholders",
   "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
-  "item.megalsmod.placeholder_item": "Placeholder Item",
   "entity.megalsmod.player_mob": "Player",
+  "item.megalsmod.placeholder_item": "Placeholder Item",
   "block.megalsmod.placeholder_block": "Placeholder Block"
 }

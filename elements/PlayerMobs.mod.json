@@ -1,0 +1,11 @@
+{
+  "_fv": 15,
+  "_type": "tab",
+  "definition": {
+    "name": "Mobs",
+    "icon": {
+      "value": "CUSTOM:PlayerMobCatagoryImage"
+    },
+    "showSearch": true
+  }
+}
