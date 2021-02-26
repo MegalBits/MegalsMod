@@ -236,40 +236,34 @@
       "registry_name": "player_mob_16"
     },
     {
-      "name": "BurntGrass",
-      "type": "block",
+      "name": "Beneath",
+      "type": "dimension",
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "charred_grass"
+      "registry_name": "beneath",
+      "metadata": {
+        "ep": true
+      }
     },
     {
-      "name": "Blocks",
-      "type": "tab",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blocks"
-    },
-    {
-      "name": "CharredDirt",
-      "type": "block",
+      "name": "MagicWaterBucketCraft",
+      "type": "recipe",
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "charred_dirt"
+      "registry_name": "magic_water_bucket_craft"
     },
     {
-      "name": "CharredForest",
+      "name": "TheBeneath",
       "type": "biome",
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "charred_forest"
+      "registry_name": "the_beneath"
     }
   ],
   "variable_elements": [],
@@ -294,7 +288,6 @@
       "item.megalsmod.player_mob_4_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.player_mob_12_spawn_egg": "Player Spawn Egg",
       "block.megalsmod.placeholder_block": "Placeholder Block",
-      "biome.megalsmod.charred_forest": "Charred Forest",
       "entity.megalsmod.player_mob_4": "Player",
       "entity.megalsmod.player_mob_3": "Player",
       "entity.megalsmod.player_mob_2": "Player",
@@ -302,22 +295,22 @@
       "item.megalsmod.player_mob_spawn_egg": "Player Spawn Egg",
       "entity.megalsmod.player_mob_0": "Player",
       "item.megalsmod.player_mob_0_spawn_egg": "Player Spawn Egg",
-      "entity.megalsmod.player_mob_9": "Player",
       "item.megalsmod.player_mob_16_spawn_egg": "Player Spawn Egg",
+      "entity.megalsmod.player_mob_9": "Player",
       "entity.megalsmod.player_mob_8": "Player",
       "item.megalsmod.player_mob_10_spawn_egg": "Player Spawn Egg",
       "itemGroup.tabplaceholders": "Placeholders",
       "entity.megalsmod.player_mob_6": "Player",
       "entity.megalsmod.player_mob_5": "Player",
+      "biome.megalsmod.the_beneath": "The Beneath",
       "item.megalsmod.placeholder_item": "Placeholder Item",
       "item.megalsmod.player_mob_3_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.player_mob_13_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.placeholder_tool": "Placeholder Tool",
-      "itemGroup.tabblocks": "Blocks",
       "entity.megalsmod.playermob_7": "Player",
-      "block.megalsmod.charred_dirt": "Charred Dirt",
       "item.megalsmod.player_mob_6_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.placeholder_weapon": "Placeholder Weapon",
+      "item.megalsmod.beneath": "Magic Water Bucket",
       "entity.megalsmod.player_mob_11": "Player",
       "entity.megalsmod.player_mob_10": "Player",
       "item.megalsmod.player_mob_9_spawn_egg": "Player Spawn Egg",
@@ -327,7 +320,6 @@
       "item.megalsmod.player_mob_14_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.player_mob_catagory_image": "Player Mob Catagory Image",
       "biome.megalsmod.giant_oak": "Giant Oak",
-      "block.megalsmod.charred_grass": "Charred Grass",
       "item.megalsmod.player_mob_2_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.player_mob_5_spawn_egg": "Player Spawn Egg",
       "entity.megalsmod.player_mob": "Player",

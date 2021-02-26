@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:TheBeneath"
+      }
+    ],
+    "worldGenType": "Nether like gen",
+    "mainFillerBlock": {
+      "value": "Blocks.WATER"
+    },
+    "fluidBlock": {
+      "value": "Blocks.WATER"
+    },
+    "airColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": true,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.PRISMARINE#1"
+    },
+    "portalParticles": {
+      "value": "WATER_SPLASH"
+    },
+    "portalLuminance": 4,
+    "portalSound": {
+      "value": "ambient.underwater.loop"
+    },
+    "igniterName": "Magic Water Bucket",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "bucket_water",
+    "portalTexture": "water",
+    "enablePortal": true
+  }
+}
