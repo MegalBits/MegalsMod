@@ -279,8 +279,8 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.old_player_hurt": "Player mob hurt",
       "item.megalsmod.player_mob_13_spawn_egg": "Player Spawn Egg",
+      "subtitles.old_player_hurt": "Player mob hurt",
       "item.megalsmod.player_mob_1_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.player_mob_11_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.player_mob_15_spawn_egg": "Player Spawn Egg",

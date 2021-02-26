@@ -44,9 +44,9 @@
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
-    "sandPatchesPerChunk": 80,
-    "gravelPatchesPerChunk": 50,
-    "reedsPerChunk": 30,
+    "sandPatchesPerChunk": 100,
+    "gravelPatchesPerChunk": 70,
+    "reedsPerChunk": 0,
     "cactiPerChunk": 0,
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
@@ -86,7 +86,7 @@
         },
         "minGroup": 4,
         "maxGroup": 10,
-        "weight": 8,
+        "weight": 2,
         "spawnType": "waterCreature"
       },
       {
@@ -95,7 +95,7 @@
         },
         "minGroup": 3,
         "maxGroup": 7,
-        "weight": 6,
+        "weight": 1,
         "spawnType": "waterCreature"
       },
       {
@@ -104,7 +104,7 @@
         },
         "minGroup": 5,
         "maxGroup": 14,
-        "weight": 10,
+        "weight": 3,
         "spawnType": "waterCreature"
       },
       {
@@ -113,7 +113,7 @@
         },
         "minGroup": 1,
         "maxGroup": 3,
-        "weight": 10,
+        "weight": 1,
         "spawnType": "waterCreature"
       },
       {
@@ -122,7 +122,7 @@
         },
         "minGroup": 1,
         "maxGroup": 20,
-        "weight": 12,
+        "weight": 2,
         "spawnType": "waterCreature"
       }
     ]
