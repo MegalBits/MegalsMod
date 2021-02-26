@@ -1,5 +1,5 @@
 {
-  "type": "megalsmod:beneath",
+  "type": "megalsmod:enchanted_ocean",
   "generator": {
     "type": "minecraft:noise",
     "seed": 0,
@@ -36,7 +36,7 @@
       },
       "biomes": [
         {
-          "biome": "megalsmod:the_beneath",
+          "biome": "megalsmod:enchanted_ocean",
           "parameters": {
             "altitude": 0,
             "temperature": 0,
@@ -48,7 +48,7 @@
       ]
     },
     "settings": {
-      "name": "megalsmod:beneath",
+      "name": "megalsmod:enchanted_ocean",
       "bedrock_roof_position": -10,
       "bedrock_floor_position": 0,
       "sea_level": 63,

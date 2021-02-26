@@ -72,7 +72,7 @@ import com.google.common.collect.ImmutableSet;
 
 @MegalsmodModElements.ModElement.Tag
 public class BeneathDimension extends MegalsmodModElements.ModElement {
-	@ObjectHolder("megalsmod:beneath_portal")
+	@ObjectHolder("megalsmod:enchanted_ocean_portal")
 	public static final CustomPortalBlock portal = null;
 	public BeneathDimension(MegalsmodModElements instance) {
 		super(instance, 27);
@@ -113,7 +113,7 @@ public class BeneathDimension extends MegalsmodModElements.ModElement {
 			try {
 				Object2ObjectMap<ResourceLocation, DimensionRenderInfo> effectsRegistry = (Object2ObjectMap<ResourceLocation, DimensionRenderInfo>) ObfuscationReflectionHelper
 						.getPrivateValue(DimensionRenderInfo.class, null, "field_239208_a_");
-				effectsRegistry.put(new ResourceLocation("megalsmod:beneath"), customEffect);
+				effectsRegistry.put(new ResourceLocation("megalsmod:enchanted_ocean"), customEffect);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -121,25 +121,25 @@ public class BeneathDimension extends MegalsmodModElements.ModElement {
 		RenderTypeLookup.setRenderLayer(portal, RenderType.getTranslucent());
 	}
 	private static PointOfInterestType poi = null;
-	public static final TicketType<BlockPos> CUSTOM_PORTAL = TicketType.create("beneath_portal", Vector3i::compareTo, 300);
+	public static final TicketType<BlockPos> CUSTOM_PORTAL = TicketType.create("enchanted_ocean_portal", Vector3i::compareTo, 300);
 	public static class POIRegisterHandler {
 		@SubscribeEvent
 		public void registerPointOfInterest(RegistryEvent.Register<PointOfInterestType> event) {
-			poi = new PointOfInterestType("beneath_portal", Sets.newHashSet(ImmutableSet.copyOf(portal.getStateContainer().getValidStates())), 0, 1)
-					.setRegistryName("beneath_portal");
+			poi = new PointOfInterestType("enchanted_ocean_portal", Sets.newHashSet(ImmutableSet.copyOf(portal.getStateContainer().getValidStates())),
+					0, 1).setRegistryName("enchanted_ocean_portal");
 			ForgeRegistries.POI_TYPES.register(poi);
 		}
 	}
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomPortalBlock());
-		elements.items.add(() -> new BeneathItem().setRegistryName("beneath"));
+		elements.items.add(() -> new BeneathItem().setRegistryName("enchanted_ocean"));
 	}
 	public static class CustomPortalBlock extends NetherPortalBlock {
 		public CustomPortalBlock() {
 			super(Block.Properties.create(Material.PORTAL).doesNotBlockMovement().tickRandomly().hardnessAndResistance(-1.0F).sound(SoundType.GLASS)
 					.setLightLevel(s -> 4).noDrops());
-			setRegistryName("beneath_portal");
+			setRegistryName("enchanted_ocean_portal");
 		}
 
 		@Override
@@ -202,9 +202,10 @@ public class BeneathDimension extends MegalsmodModElements.ModElement {
 				if (entity.func_242280_ah()) {
 					entity.func_242279_ag();
 				} else if (entity.world.getDimensionKey() != RegistryKey.getOrCreateKey(Registry.WORLD_KEY,
-						new ResourceLocation("megalsmod:beneath"))) {
+						new ResourceLocation("megalsmod:enchanted_ocean"))) {
 					entity.func_242279_ag();
-					teleportToDimension(entity, pos, RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("megalsmod:beneath")));
+					teleportToDimension(entity, pos,
+							RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("megalsmod:enchanted_ocean")));
 				} else {
 					entity.func_242279_ag();
 					teleportToDimension(entity, pos, World.OVERWORLD);

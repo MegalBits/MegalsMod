@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "megalsmod:block/enchanted_ocean_portal_ew"
+    },
+    "axis=x": {
+      "model": "megalsmod:block/enchanted_ocean_portal_ns"
+    }
+  }
+}

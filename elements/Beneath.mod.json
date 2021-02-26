@@ -23,7 +23,7 @@
     "isDark": true,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
-    "hasSkyLight": false,
+    "hasSkyLight": true,
     "imitateOverworldBehaviour": false,
     "portalFrame": {
       "value": "Blocks.PRISMARINE#1"

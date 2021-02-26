@@ -83,7 +83,7 @@ public class TheBeneathBiome extends MegalsmodModElements.ModElement {
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(10f).scale(0f).temperature(0.5f)
 						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("megalsmod:the_beneath"));
+				event.getRegistry().register(biome.setRegistryName("megalsmod:enchanted_ocean"));
 			}
 		}
 	}

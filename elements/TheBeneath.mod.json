@@ -2,7 +2,7 @@
   "_fv": 15,
   "_type": "biome",
   "definition": {
-    "name": "The Beneath",
+    "name": "Enchanted Ocean",
     "groundBlock": {
       "value": "Blocks.FLOWING_WATER"
     },

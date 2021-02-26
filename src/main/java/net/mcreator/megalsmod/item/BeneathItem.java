@@ -15,7 +15,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.mcreator.megalsmod.world.dimension.BeneathDimension;
 
 public class BeneathItem extends Item {
-	@ObjectHolder("megalsmod:beneath")
+	@ObjectHolder("megalsmod:enchanted_ocean")
 	public static final Item block = null;
 	public BeneathItem() {
 		super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(64));
