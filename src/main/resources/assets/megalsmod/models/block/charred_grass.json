@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "megalsmod:blocks/ashgrass3",
+    "up": "megalsmod:blocks/ashgrass1",
+    "north": "megalsmod:blocks/ashgrass2",
+    "east": "megalsmod:blocks/ashgrass2",
+    "south": "megalsmod:blocks/ashgrass2",
+    "west": "megalsmod:blocks/ashgrass2",
+    "particle": "megalsmod:blocks/ashgrass3"
+  }
+}
