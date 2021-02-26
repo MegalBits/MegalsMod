@@ -236,34 +236,13 @@
       "registry_name": "player_mob_16"
     },
     {
-      "name": "Beneath",
-      "type": "dimension",
+      "name": "ExtraVegetationMelon",
+      "type": "structure",
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enchanted_ocean",
-      "metadata": {
-        "ep": true
-      }
-    },
-    {
-      "name": "MagicWaterBucketCraft",
-      "type": "recipe",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magic_water_bucket_craft"
-    },
-    {
-      "name": "TheBeneath",
-      "type": "biome",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "enchanted_ocean"
+      "registry_name": "extra_vegetation_melon"
     }
   ],
   "variable_elements": [],
@@ -285,7 +264,6 @@
       "item.megalsmod.player_mob_15_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.player_mob_8_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.playermob_7_spawn_egg": "Player Spawn Egg",
-      "item.megalsmod.enchanted_ocean": "Magic Water Bucket",
       "item.megalsmod.player_mob_4_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.player_mob_12_spawn_egg": "Player Spawn Egg",
       "block.megalsmod.placeholder_block": "Placeholder Block",
@@ -296,8 +274,8 @@
       "item.megalsmod.player_mob_spawn_egg": "Player Spawn Egg",
       "entity.megalsmod.player_mob_0": "Player",
       "item.megalsmod.player_mob_0_spawn_egg": "Player Spawn Egg",
-      "entity.megalsmod.player_mob_9": "Player",
       "item.megalsmod.player_mob_16_spawn_egg": "Player Spawn Egg",
+      "entity.megalsmod.player_mob_9": "Player",
       "entity.megalsmod.player_mob_8": "Player",
       "item.megalsmod.player_mob_10_spawn_egg": "Player Spawn Egg",
       "itemGroup.tabplaceholders": "Placeholders",
@@ -323,7 +301,6 @@
       "item.megalsmod.player_mob_2_spawn_egg": "Player Spawn Egg",
       "item.megalsmod.player_mob_5_spawn_egg": "Player Spawn Egg",
       "entity.megalsmod.player_mob": "Player",
-      "biome.megalsmod.enchanted_ocean": "Enchanted Ocean",
       "entity.megalsmod.player_mob_15": "Player",
       "entity.megalsmod.player_mob_14": "Player",
       "entity.megalsmod.player_mob_16": "Player"
