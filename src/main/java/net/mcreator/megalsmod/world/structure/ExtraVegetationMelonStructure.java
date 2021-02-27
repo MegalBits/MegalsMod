@@ -50,7 +50,7 @@ public class ExtraVegetationMelonStructure extends MegalsmodModElements.ModEleme
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				if ((random.nextInt(1000000) + 1) <= 20000) {
+				if ((random.nextInt(1000000) + 1) <= 4000) {
 					int count = random.nextInt(6) + 1;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);

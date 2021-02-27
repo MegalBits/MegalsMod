@@ -5,7 +5,7 @@
     "structure": "melon",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 20000,
+    "spawnProbability": 4000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 6,
     "spawnLocation": "Ground",
